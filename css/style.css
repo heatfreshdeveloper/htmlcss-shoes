@@ -8,25 +8,71 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-.shoes-navbar {
-    width: 100%;
-    height: 62px;
-    background-color: red;
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
-.shoes-navbar ul li {
+
+.shoes-navbar {
+    float: right;
+}
+
+.shoes-navbar li {
     list-style: none;
+    float: left;
+}
+
+.shoes-navbar li a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
     background-color: white;
     border-radius: 100%;
-    float: right;
     line-height: 8px;
     padding: 12px;
     margin: 15px;
     font-size: 10px;
 }
 
-.shoes-navbar ul li a {
-    text-decoration: none;
+.shoes {
+    height: 100vh;
+    position: relative;
+}
+
+.red {
+    background-color: red;
+    color: yellow;
+}
+
+
+.green {
+    background-color:green;
+    color: yellow;
+}
+
+.yellow {
+    background-color: yellow;
+    color: green;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container p {
+    text-align: center;
+    font-size: 35px;
 }
 
 
